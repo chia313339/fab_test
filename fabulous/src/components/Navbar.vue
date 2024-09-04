@@ -78,6 +78,8 @@ export default {
                         { label: '建築外觀設計', link: '/page32' },
                         { label: '建築細部美學', link: '/page33' },
                         { label: '建築燈光設計', link: '/page34' },
+                        { label: '建築景觀美學', link: '/page35' },
+                        { label: '結構工程設計', link: '/page36' },
                     ],
                 },
                 {
@@ -94,14 +96,23 @@ export default {
                 {
                     label: '工學品境',
                     subLabel: '/',
-                    link: '/page51', // 直接鏈接
-                    subItems: [],
+                    link: '/page50', // 直接鏈接
+                    subItems: [
+                        { label: '結構工法', link: '/page51' },
+                        { label: '防水工程', link: '/page52' },
+                        { label: '貼心工法', link: '/page53' },
+                        { label: '精選建材', link: '/page54' },
+                    ],
                 },
                 {
                     label: '區域情勢',
                     subLabel: '/',
                     link: '/page61', // 直接鏈接
-                    subItems: [],
+                    subItems: [
+                        { label: '軌道經濟', link: '/page61' },
+                        { label: '區域市場', link: '/page62' },
+                        { label: '時事新聞', link: '/page63' },
+                    ],
                 },
             ],
         };
@@ -215,5 +226,7 @@ export default {
     color: #030303 !important;
     font-size: calc(1.25vw + 1px);
 }
+
+
 </style>
 

@@ -2,7 +2,7 @@
     <div class="fullwidthbanner-container">
       <div class="tag-box">
         <div class="tag">
-          <b>區域情勢 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <span>待開發</span></b>
+          <b>區域情勢 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <span>軌道經濟</span></b>
         </div>
       </div>
       <div class="content">

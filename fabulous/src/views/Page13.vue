@@ -203,14 +203,14 @@ export default {
   
   .overlay-images {
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     right: 30%;
     display: flex;
     gap: 4vw;
   }
   
   .overlay-img {
-    width: 10vw;
+    width: 15vw;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
