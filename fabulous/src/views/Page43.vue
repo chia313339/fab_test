@@ -74,18 +74,22 @@ export default {
       selectedFloor.value = floor;
       currentImage.value = `/img/p43/${floor.toLowerCase()}.png`;
     };
-
-    // 使用正則表達式來提取樓層數字
+    // 使用正則表達式來提取樓層數字，並排除 B4 和 B3
     const getFloorNumber = (floor) => {
+      if (floor.startsWith('B')) {
+        // 排除 B4 和 B3 等以 'B' 開頭的樓層
+        return null;
+      }
       const match = floor.match(/\d+/);
       return match ? parseInt(match[0], 10) : null;
     };
 
-    // 計算屬性，檢查當前樓層是否在3F至18F範圍內
+    // 計算屬性，檢查當前樓層是否在3F至18F範圍內，排除 B 開頭的樓層
     const isWithinSelectedFloors = computed(() => {
       const floorNum = getFloorNumber(selectedFloor.value);
       return floorNum && floorNum >= 3 && floorNum <= 18;
     });
+
 
     // 計算屬性，檢查當前樓層是否在19F以上
     const is19fup = computed(() => {
